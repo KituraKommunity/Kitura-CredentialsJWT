@@ -32,7 +32,7 @@
       </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/IBM-Swift/Kitura-CredentialsJWT/">
+          <a class="header-link" href="https://github.com/KituraKommunity/Kitura-CredentialsJWT/">
             <img class="header-icon" src="img/gh.png"/>
             View on GitHub
           </a>
@@ -85,7 +85,7 @@
             
             <p align="center">
     <a href="http://kitura.io/">
-        <img src="https://raw.githubusercontent.com/IBM-Swift/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+        <img src="https://raw.githubusercontent.com/KituraKommunity/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
     </a>
 </p>
 
@@ -93,8 +93,8 @@
     <a href="http://www.kitura.io/">
     <img src="https://img.shields.io/badge/docs-kitura.io-1FBCE4.svg" alt="Docs">
     </a>
-    <a href="https://travis-ci.org/IBM-Swift/Kitura-CredentialsJWT">
-    <img src="https://travis-ci.org/IBM-Swift/Kitura-CredentialsJWT.svg?branch=master" alt="Build Status - Master">
+    <a href="https://travis-ci.org/KituraKommunity/Kitura-CredentialsJWT">
+    <img src="https://travis-ci.org/KituraKommunity/Kitura-CredentialsJWT.svg?branch=master" alt="Build Status - Master">
     </a>
     <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
     <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
@@ -111,7 +111,7 @@
 <p>This package provides two facilities:</p>
 
 <ul>
-<li><code><a href="Classes/CredentialsJWT.html">CredentialsJWT</a></code>: A plugin for the <a href="https://github.com/IBM-Swift/Kitura-Credentials">Kitura-Credentials</a> framework that supports JWT (token-based) authentication,</li>
+<li><code><a href="Classes/CredentialsJWT.html">CredentialsJWT</a></code>: A plugin for the <a href="https://github.com/KituraKommunity/Kitura-Credentials">Kitura-Credentials</a> framework that supports JWT (token-based) authentication,</li>
 <li>A <code>TypeSafeMiddleware</code> extension for the <code>JWT</code> type, enabling it to be used as authentication for Codable routes.</li>
 </ul>
 <h2 id='swift-version' class='heading'>Swift version</h2>
@@ -126,7 +126,7 @@
 <li><code>Authorization</code>: the JWT string, optionally prefixed with <code>Bearer</code>.</li>
 </ul>
 
-<p>The <a href="https://github.com/IBM-Swift/Swift-JWT">Swift-JWT</a> library is used to decode the token supplied in the Authorization header. To successfully decode it, you must specify the <code>Claims</code> that will be present in the JWT.</p>
+<p>The <a href="https://github.com/KituraKommunity/Swift-JWT">Swift-JWT</a> library is used to decode the token supplied in the Authorization header. To successfully decode it, you must specify the <code>Claims</code> that will be present in the JWT.</p>
 
 <p>One claim (by default, <code>sub</code>) will be used to represent the identity of the bearer.  You can choose a different claim by supplying the <code>subject</code> option when creating an instance of CredentialsJWT, and you can further customize the resulting <code>UserProfile</code> by defining a <code>UserProfileDelegate</code>.</p>
 <h3 id='usage-example' class='heading'> Usage Example</h3>
@@ -196,7 +196,7 @@
 </ul>
 <h2 id='example-of-jwt-authentication-for-codable-routes' class='heading'>Example of JWT authentication for Codable routes</h2>
 
-<p>A Kitura Codable route can be authenticated using a JWT by using the <code>JWT&lt;C: Claims&gt;</code> type (defined by <a href="https://github.com/IBM-Swift/Swift-JWT">Swift-JWT</a>) as a Type-Safe Middleware:</p>
+<p>A Kitura Codable route can be authenticated using a JWT by using the <code>JWT&lt;C: Claims&gt;</code> type (defined by <a href="https://github.com/KituraKommunity/Swift-JWT">Swift-JWT</a>) as a Type-Safe Middleware:</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftJWT</span>
 <span class="kd">import</span> <span class="kt">CredentialsJWT</span>
 
